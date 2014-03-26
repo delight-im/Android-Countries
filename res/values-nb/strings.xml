@@ -130,4 +130,5 @@
 	<string name="country_zaf">South Africa</string>
 	<string name="country_zmb">Zambia</string>
 	<string name="country_zwe">Zimbabwe</string>
+	<string name="default_recommended">Standard (Recommended)</string>
 </resources>
