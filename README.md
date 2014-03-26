@@ -8,6 +8,20 @@ Provides country codes in accordance with ISO-3166-1 and localized names for eac
 
 ## Usage
 
+### Custom country preference in your `PreferenceActivity`
+
+Add the following code to your XML for the preferences. The class `CountryPreference` extends `ListPreference` and has the same appearance. It ignores the attributes `android:entries`, `android:entryValues`, `android:defaultValue` and `android:summary` because it comes with its own implementation for those.
+
+Be sure to set `android:key` to the preference key that you want to store the country code in. For `android:title`, provide a value from your string resources, for example, which will be used as the preference's caption.
+
+```
+<im.delight.android.countries.CountryPreference
+	android:key="country"
+	android:title="..."
+	android:enabled="true"
+	android:selectable="true" />
+```
+
 ### Retrieving a list of all supported short codes
 
 ```
