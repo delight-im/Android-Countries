@@ -36,9 +36,9 @@ public class CountryPreference extends ListPreference {
 	
 	protected void init() {
 		// use the list of human-readable language names for the displayed list
-		setEntries(R.array.countries_full_names);
+		setEntries(R.array.countries_list_human);
 		// use the list of machine-readable language names for the saved values
-		setEntryValues(R.array.countries_short_codes);
+		setEntryValues(R.array.countries_list_machine);
 		// use an empty language code (no custom language) as the default
 		setDefaultValue("");
 		// set the summary to be auto-updated to the selected value

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string-array name="countries_full_names" translatable="false">
+	<string-array name="countries_list_human" translatable="false">
 		<item>@string/country_chn</item>
 		<item>@string/country_ind</item>
 		<item>@string/country_usa</item>

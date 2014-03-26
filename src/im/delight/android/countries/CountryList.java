@@ -27,7 +27,7 @@ public class CountryList {
 	 * @return String array containing the full country names
 	 */
 	public static String[] getHumanReadable(Context context) {
-		return context.getResources().getStringArray(R.array.countries_full_names);
+		return context.getResources().getStringArray(R.array.countries_list_human);
 	}
 	
 	/**
@@ -37,7 +37,7 @@ public class CountryList {
 	 * @return String array containing the ISO-3166-1 ALPHA-3 codes
 	 */
 	public static String[] getMachineReadable(Context context) {
-		return context.getResources().getStringArray(R.array.countries_short_codes);
+		return context.getResources().getStringArray(R.array.countries_list_machine);
 	}
 
 }

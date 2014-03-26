@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string-array name="countries_short_codes" translatable="false">
+	<string-array name="countries_list_machine" translatable="false">
 		<item>CHN</item>
 		<item>IND</item>
 		<item>USA</item>
