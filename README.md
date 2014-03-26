@@ -8,17 +8,32 @@ Provides country codes in accordance with ISO-3166-1 and localized names for eac
 
 ## Usage
 
+### Retrieving a list of all supported short codes
+
 ```
-String[] countryCodes = Country.getIso3Codes();
+String[] countryCodes = Country.getShortCodes(context);
 // countryCodes now contains "CHN", "IND", "USA", "IDN", "BRA" etc.
 ```
 
-and
+### Retrieving a list of the full language names
+
+```
+String[] countryNames = Country.getFullNames(context);
+// countryNames now contains "China", "India", "United States", "Indonesia", "Brazil" etc. (depending on the user's locale)
+```
+
+### Retrieving a country's full name from its short code
 
 ```
 String localizedName = Country.getNameByIso3Code(context, "ESP");
-// localizedName now contains "Spain" or "España" (etc.) depending on the user's locale
+// localizedName now contains "Spain" or "EspaÃ±a" (etc.) depending on the user's locale
 ```
+
+## Adding new countries
+
+ 1. Create a new entry at the end of the string array `countries_short_codes` in `res/values/short_codes.xml`
+ 2. Add the full name of the country (at least for English) to our [platform for managed translations](http://www.localize.io/v/3l)
+ 3. Create a new entry at the end of the string array `countries_full_names` in `res/values/full_names.xml`, referencing the new `country_xxx` resource that has just been submitted in the step before
 
 ## Contribute
 
