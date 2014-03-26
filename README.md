@@ -15,14 +15,14 @@ String[] countryCodes = Country.getShortCodes(context);
 // countryCodes now contains "CHN", "IND", "USA", "IDN", "BRA" etc.
 ```
 
-### Retrieving a list of the full language names
+### Retrieving a list of all supported full names
 
 ```
 String[] countryNames = Country.getFullNames(context);
 // countryNames now contains "China", "India", "United States", "Indonesia", "Brazil" etc. (depending on the user's locale)
 ```
 
-### Retrieving a country's full name from its short code
+### Getting a country's full name by its short code
 
 ```
 String localizedName = Country.getNameByIso3Code(context, "ESP");
@@ -35,11 +35,9 @@ String localizedName = Country.getNameByIso3Code(context, "ESP");
  2. Add the full name of the country (at least for English) to our [platform for managed translations](http://www.localize.io/v/3l)
  3. Create a new entry at the end of the string array `countries_full_names` in `res/values/full_names.xml`, referencing the new `country_xxx` resource that has just been submitted in the step before
 
-## Contribute
+## Translating country names
 
-If you want to translate existing country names or add new ones, please do so on our platform for managed translations:
-
-[Android-Countries on Localize](http://www.localize.io/v/3l)
+If you want to translate existing country names, please do so on our [platform for managed translations](http://www.localize.io/v/3l).
 
 ## License
 
