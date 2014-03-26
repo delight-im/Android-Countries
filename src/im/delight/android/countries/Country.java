@@ -53,26 +53,6 @@ public class Country {
 	}
 	
 	/**
-	 * Returns a list of all supported ISO-3166-1 ALPHA-3 codes
-	 * 
-	 * @param context the Context reference to get the Resources from
-	 * @return String array containing the ISO-3166-1 ALPHA-3 codes
-	 */
-	public static String[] getShortCodes(Context context) {
-		return context.getResources().getStringArray(R.array.countries_short_codes);
-	}
-	
-	/**
-	 * Returns a list of all supported full country names
-	 * 
-	 * @param context the Context reference to get the Resources from
-	 * @return String array containing the full country names
-	 */
-	public static String[] getFullNames(Context context) {
-		return context.getResources().getStringArray(R.array.countries_full_names);
-	}
-	
-	/**
 	 * Returns the localized name for the country with the given ISO-3166-1 ALPHA-3 code
 	 * 
 	 * @param context Context instance to use in order to access the resources

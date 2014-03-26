@@ -11,14 +11,14 @@ Provides country codes in accordance with ISO-3166-1 and localized names for eac
 ### Retrieving a list of all supported short codes
 
 ```
-String[] countryCodes = Country.getShortCodes(context);
+String[] countryCodes = CountryList.getMachineReadable(context);
 // countryCodes now contains "CHN", "IND", "USA", "IDN", "BRA" etc.
 ```
 
 ### Retrieving a list of all supported full names
 
 ```
-String[] countryNames = Country.getFullNames(context);
+String[] countryNames = CountryList.getHumanReadable(context);
 // countryNames now contains "China", "India", "United States", "Indonesia", "Brazil" etc. (depending on the user's locale)
 ```
 
