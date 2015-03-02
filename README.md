@@ -46,12 +46,12 @@ String localizedName = Country.getNameByIso3Code(context, "ESP");
 ## Adding new countries
 
  1. Create a new entry at the end of the string array `countries_list_machine` in `res/values/short_codes.xml`
- 2. Add the full name of the country (at least for English) to our [platform for managed translations](http://www.localize.io/v/3l)
+ 2. Add the full name of the country (at least for English) to our [platform for managed translations](http://www.localize.im/v/3l)
  3. Create a new entry at the end of the string array `countries_list_human` in `res/values/full_names.xml`, referencing the new `country_xxx` resource that has just been submitted in the step before
 
 ## Translating country names
 
-If you want to translate existing country names, please do so on our [platform for managed translations](http://www.localize.io/v/3l).
+If you want to translate existing country names, please do so on our [platform for managed translations](http://www.localize.im/v/3l).
 
 ## License
 
